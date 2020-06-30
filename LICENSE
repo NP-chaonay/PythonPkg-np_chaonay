@@ -1,3 +1,18 @@
+- Author: NP-chaonay (Nuttapong Punpipat)
+
+- Contributors:
+	- NP-chaonay (Nuttapong Punpipat)
+
+- Most of software contained in this Python package should use MIT License.
+  In case of "MIT License" is used, MAIN LICENSE BELOW IS APPLIED by default.
+  In case of other license is used, MUST BE STATED in this file.
+
+- This Python package and most of the rest, use the main "MIT License".
+
+- Main license used in this package is "MIT License"
+  For the main license's declaration, see below. :
+
+                        ######## START OF LINE ########
 MIT License
 
 Copyright (c) 2020 Nuttapong Punpipat
@@ -19,3 +34,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+                        ######## END OF LINE ########
