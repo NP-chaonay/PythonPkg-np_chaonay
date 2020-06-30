@@ -6,7 +6,7 @@
 #       - Major version: indicates of very significant changes or changes that break compatibility on some system/platforms.
 #       - Minor version: indicates of significant changes or features adding.
 #       - Micro version: indicates of small changes or bug patches, or even typo revising.
-# Revised Date: 2020-06-30 : (UTC)
+# Revised Date: 2020-06-30 12:25 (UTC)
 # License: MIT License
 # Programming Language: Python
 # CUI/GUI Language: English
