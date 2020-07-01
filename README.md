@@ -12,7 +12,7 @@
   my software that depends on this.
 - However, this package may be useful for you.
 - Feel much stress? Try np_chaonay.humour (For more good experience: try
-  executing 'from np_chaonay.humour.main import *'.
+  executing `'from np_chaonay.humour.main import *'`.
 
 ## Bug reportings
 This is currently recommended way to notice me :
@@ -21,5 +21,7 @@ This is currently recommended way to notice me :
 
 ## Ending passage
 Hope anyone enjoy using this package.
+
 Start doing something useful for yourself, your family+friends,
+
 your nearest-neighborhood, your circles, and your society+world.
