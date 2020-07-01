@@ -43,7 +43,8 @@ class ValueWarning(Warning):
 
 ######## Post-Initialization ########
 
-_warnings.filterwarnings('always','',ValueWarning,__name__)
+_warnings.filterwarnings('always','',ValueWarning,'^'+__name__+'$')
+_warnings.filterwarnings('default','',DeprecationWarning,'^'+__name__+'$')
 
 ######## Completed ########
 
@@ -171,12 +172,14 @@ def print_categorical_bracket(category,text,**kwargs):
 
 class Namespace(_Namespace):
 	def __init__(self,name=None):
+		_warnings.warn('1 year after this release published, this class will be removed from module. Use \'types.SimpleNamespace\' instead.',DeprecationWarning)
 		if name!=None:
 			if isinstance(name,str):
 				self.__name__=str(name)
 			else:
 				raise TypeError('\'name\' should be string-alike.')
 	def __repr__(self):
+		_warnings.warn('1 year after this release published, this class will be removed from module. Use \'types.SimpleNamespace\' instead.',DeprecationWarning)
 		if '__name__' in dir(self):
 			return '<np_chaonay.main.Namespace \''+self.__name__+'\'>'
 		else:
