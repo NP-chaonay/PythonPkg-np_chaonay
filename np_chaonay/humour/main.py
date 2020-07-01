@@ -6,7 +6,7 @@
 #       - Major version: indicates of very significant changes or changes that break compatibility on some system/platforms.
 #       - Minor version: indicates of significant changes or features adding.
 #       - Micro version: indicates of small changes or bug patches, or even typo revising.
-# Revised Date: 2020-06-30 09:13 (UTC)
+# Revised Date: 2020-07-01 16:41 (UTC)
 # License: MIT License
 # Programming Language: Python
 # CUI/GUI Language: English
@@ -18,7 +18,7 @@ Main module for humour-related objects
 HAVING FUN!!!
 """
 
-import time
+import _time
 
 # Class look like function, however you wouldn't run this right?"""
 class run_python():
@@ -38,7 +38,7 @@ python3=python
 python2=run_python2()
 
 # Yeah, UNIX Epoch time is the example of time in the past.
-past=time.localtime(0)
+past=_time.localtime(0)
 
 # Implement zen string.
 zen="You're the Zen!"
