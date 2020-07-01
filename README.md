@@ -11,8 +11,8 @@
 - Generally, there not need to use this package unless you're going to use
   my software that depends on this.
 - However, this package may be useful for you.
-- Feel much stress? Try np_chaonay.humour (For more good experience: try
-  executing `'from np_chaonay.humour.main import *'`.
+- Feel much stress? Try np_chaonay.humour (For more good experience:
+  try executing `from np_chaonay.humour.main import *`.
 
 ## Bug reportings
 This is currently recommended way to notice me :
