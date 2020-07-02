@@ -16,8 +16,7 @@
 
 ## Bug reportings
 This is currently recommended way to notice me :
-- E-mail: nuttapongpunpipat@gmail.com (Personal/Work/Public E-mail of Author)
-- The given method on software homepage / bug reporting page
+- Issues page of Github repository
 
 ## Ending passage
 Hope anyone enjoy using this package.
