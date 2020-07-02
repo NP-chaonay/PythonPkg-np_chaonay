@@ -21,6 +21,4 @@ This is currently recommended way to notice me :
 ## Ending passage
 Hope anyone enjoy using this package.
 
-Start doing something useful for yourself, your family+friends,
-
-your nearest-neighborhood, your circles, and your society+world.
+Start doing something useful for yourself, your family+friends, your nearest-neighborhood, your circles, and your society+world.
