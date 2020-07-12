@@ -1,0 +1,5 @@
+# Changes Pushing
+- Recommended to not change the version.
+# Release Publishing
+- Checking for changed files, change the version of those.
+- Changing the version in README and LICENSE, or others related.
