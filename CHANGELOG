@@ -1,0 +1,15 @@
+[REMARK]
+- Updating of common files with common changing (ex. versioning changing in CHANGELOG, setup.py) should not be included here.
+
+1.0.7
+	- Changes from 1.0.6 (Permanently deleted)
+		- Adding DeprecationWarning for class 'Namespace' in package 'np_chaonay.main'
+		- newer README
+		- Hide external used module
+		- Adding author notice
+	- Adding upload tool for author
+	- newer README
+	- Adding CHANGELOG
+1.0.4 (Initial release)
+	- Adding main, math modules
+	- Adding humour.main modules

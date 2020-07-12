@@ -3,7 +3,7 @@
 *For GitHub viewer/user, please see ./GITHUB-NOTICES*
 
 ## Package/Module Table of Contents (with versioning)
-+ np_chaonay (1.0.6_stable)
++ np_chaonay (1.0.7_stable)
 	- main: Module contains object for general usage (2.2.3_stable)
 	- math: Module contains object for mathematics usage (1.0.2_stable)
 	+ humour (package): Humour-related objects collection package (1.0.2_stable)
