@@ -4,3 +4,4 @@
 # Release Publishing
 - Checking for changed files, changing the version of those.
 - Changing the version in README, LICENSE, setup.py, and others related.
+- Changing on files on np_chaonay/, setup.py, README; requires release publishing when ready, else no need to upgrade package version.
