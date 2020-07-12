@@ -1,5 +1,7 @@
 # Welcome to NP-chaonay object collection Python package (np_chaonay)
 
+*For GitHub viewer/user, please see ./GITHUB-NOTICES*
+
 ## Package/Module Table of Contents (with versioning)
 + np_chaonay (1.0.6_stable)
 	- main: Module contains object for general usage (2.2.3_stable)
