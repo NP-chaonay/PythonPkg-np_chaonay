@@ -1,4 +1,5 @@
 # Changes Pushing
+- Revised Date must be always updated.
 - Recommended to not change the version.
 # Release Publishing
 - Checking for changed files, change the version of those.
