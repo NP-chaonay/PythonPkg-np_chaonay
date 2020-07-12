@@ -1,11 +1,11 @@
 # Welcome to NP-chaonay object collection Python package (np_chaonay)
 
 ## Package/Module Table of Contents (with versioning)
-+ np_chaonay (1.0.4_stable)
-	- main: Module contains object for general usage (2.2.2_stable)
++ np_chaonay (1.0.6_stable)
+	- main: Module contains object for general usage (2.2.3_stable)
 	- math: Module contains object for mathematics usage (1.0.2_stable)
-	+ humour (package): Humour-related objects collection package (1.0.1_stable)
-		- main: Main module for humour-related objects (1.0.1_stable)
+	+ humour (package): Humour-related objects collection package (1.0.2_stable)
+		- main: Main module for humour-related objects (1.0.2_stable)
 
 ## Tricks and Tips
 - Generally, there not need to use this package unless you're going to use
