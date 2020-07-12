@@ -2,5 +2,5 @@
 - Revised Date must be always updated.
 - Recommended to not change the version.
 # Release Publishing
-- Checking for changed files, change the version of those.
+- Checking for changed files, changing the version of those.
 - Changing the version in README and LICENSE, or others related.
