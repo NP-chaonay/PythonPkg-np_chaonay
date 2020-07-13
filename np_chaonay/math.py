@@ -6,7 +6,7 @@
 #       - Major version: indicates of very significant changes or changes that break compatibility on some system/platforms.
 #       - Minor version: indicates of significant changes or features adding.
 #       - Micro version: indicates of small changes or bug patches, or even typo revising.
-# Revised Date: 2020-07-13 09:20 (UTC)
+# Revised Date: 2020-07-13 09:52 (UTC)
 # License: MIT License
 # Programming Language: Python
 # CUI/GUI Language: English
@@ -53,6 +53,17 @@ def polymonial_long_division(num_ce,den_ce):
 	
 	Arguments:
 	- num_ce,den_ce (non-empty iterable object, length of 'num_ce' should be higher or equal to 'den_ce'): coefficient of each degrees from the numerator and denominator respectively.
+	
+	Return value:
+	Tuple, contains:
+	- result coefficient array
+	- remainder array
+	
+	Example:
+	- array with [1,-2,3] means x^2-2x+3
+	
+	Notes:
+	- For the shape of returned arrays, depends on maximum possible amount of coefficient which depends on inputted arrays. See the source for how this function calulates.
 	'''
 	try: import numpy as np
 	except: raise ImportError('Cannot import necessary \'numpy\' package. Origin exception should be shown above.')
@@ -75,7 +86,6 @@ def polymonial_long_division(num_ce,den_ce):
 		result_ce[i]=tmp
 		sub_ce=(tmp)*den_ce
 		rmd_ce=rmd_ce-sub_ce
-		if (np.array(rmd_ce)==0).all(): return result_ce,np.zeros(round_num-1)
 		if i+1==round_num: break
 		else: rmd_ce=np.concatenate((rmd_ce[1:],(num_ce[i+len(rmd_ce)],)))
 	return result_ce,rmd_ce[1:]
