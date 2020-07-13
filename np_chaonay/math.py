@@ -6,7 +6,7 @@
 #       - Major version: indicates of very significant changes or changes that break compatibility on some system/platforms.
 #       - Minor version: indicates of significant changes or features adding.
 #       - Micro version: indicates of small changes or bug patches, or even typo revising.
-# Revised Date: 2020-07-13 08:55 (UTC)
+# Revised Date: 2020-07-13 09:20 (UTC)
 # License: MIT License
 # Programming Language: Python
 # CUI/GUI Language: English
@@ -56,8 +56,10 @@ def polymonial_long_division(num_ce,den_ce):
 	'''
 	try: import numpy as np
 	except: raise ImportError('Cannot import necessary \'numpy\' package. Origin exception should be shown above.')
-	if len(num_ce)==0 or len(den_ce)==0: raise ValueError('\'num_ce\' and \'den_ce\' should not be empty.')	
-	if len(num_ce)<len(den_ce): raise ValueError('Amount of number in \'num_ce\' must be equal or more than its of \'den_ce\'')	
+	try:
+		if len(num_ce)==0 or len(den_ce)==0: raise ValueError('\'num_ce\' and \'den_ce\' should not be empty.')	
+		if len(num_ce)<len(den_ce): raise ValueError('Amount of number in \'num_ce\' must be equal or more than its of \'den_ce\'')	
+	except: raise ValueError('Cannot find the length of both \'num_ce\' and \'den_ce\', both of them should be iterable.')
 	try:
 		num_ce=np.array(num_ce)
 		den_ce=np.array(den_ce)
