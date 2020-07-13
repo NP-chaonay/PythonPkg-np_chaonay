@@ -14,9 +14,12 @@ setuptools.setup(
     url="https://github.com/NP-chaonay/PythonPkg-np_chaonay",
     packages=setuptools.find_packages(),
     classifiers=[
-        "Programming Language :: Python :: 3",
+        "Topic :: Other/Nonlisted Topic"
+        "Development Status :: 5 - Production/Stable"
         "License :: Other/Proprietary License",
-        "Operating System :: OS Independent",
+        "Programming Language :: Python :: 3 :: Only"
+        "Operating System :: OS Independent"
+        "Natural Language :: English"
     ],
     python_requires='>=3.0',
 )
