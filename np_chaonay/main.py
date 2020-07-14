@@ -6,7 +6,7 @@
 #       - Major version: indicates of very significant changes or changes that break compatibility on some system/platforms.
 #       - Minor version: indicates of significant changes or features adding.
 #       - Micro version: indicates of small changes or bug patches, or even typo revising.
-# Revised Date: 2020-07-01 06:15 (UTC)
+# Revised Date: 2020-07-14 09:56 (UTC)
 # License: MIT License
 # Programming Language: Python
 # CUI/GUI Language: English
@@ -151,7 +151,7 @@ def arg_value_error(name,statement,err_type=ValueError):
 	"""
 	alternative_isinstance('name',(str,),name)
 	alternative_isinstance('statement',(str,),statement)
-	alternative_isinstance('err_type',(type,),err_type)
+	alternative_type_checking('err_type',(type,),err_type)
 	alternative_issubclass('err_type',(Exception,),err_type)
 	raise err_type('Inputted value for \''+name+'\' should '+statement+'.')
 
@@ -168,18 +168,33 @@ def print_categorical_bracket(category,text,**kwargs):
 	alternative_isinstance('text',(str,),text)
 	print('['+category+'] '+text,**kwargs)
 
+def alternative_warn(msg,warning_class,func_name='(UNSPECIFIED)'):
+	"""Implementation of warning.warn: Adding current point of program's execution to warning message.
+
+	Arguments:
+	- msg (str-alike): Text to be displayed in warning message.
+	- warning_class (class inherited from Warning): Passage to be displayed.
+	- func_name (str-alike): Text to be displayed as function name.
+	"""
+	alternative_isinstance('msg',(str,),msg)
+	alternative_isinstance('func_name',(str,),func_name)
+	alternative_type_checking('warning_class',(type,),warning_class)
+	alternative_issubclass('warning_class',(Warning,),warning_class)
+	# Skipping stack of this code and this function, using stack level 3.
+	_warnings.warn(msg+'\nAt: function:'+func_name+' in module:'+__name__,warning_class,3)
+
 ######## Documentation isn't fully implemented ########
 
 class Namespace(_Namespace):
 	def __init__(self,name=None):
-		_warnings.warn('1 year after this release published, this class will be removed from module. Use \'types.SimpleNamespace\' instead.',DeprecationWarning)
+		alternative_warn('1 year after this release published, this class will be removed from module. Use \'types.SimpleNamespace\' instead.',DeprecationWarning,'Namespace.__init__')
 		if name!=None:
 			if isinstance(name,str):
 				self.__name__=str(name)
 			else:
 				raise TypeError('\'name\' should be string-alike.')
 	def __repr__(self):
-		_warnings.warn('1 year after this release published, this class will be removed from module. Use \'types.SimpleNamespace\' instead.',DeprecationWarning)
+		alternative_warn('1 year after this release published, this class will be removed from module. Use \'types.SimpleNamespace\' instead.',DeprecationWarning,'Namespace.__repr__')
 		if '__name__' in dir(self):
 			return '<np_chaonay.main.Namespace \''+self.__name__+'\'>'
 		else:
@@ -209,7 +224,7 @@ def add_lead_zero(num,digit,IgnoreDataManipulation=False,RaiseDataManipulationEr
 	if digit<1: raise ValueError('Digit should be at least one.'+'\nAt: function:display_datetime, module:'+__name__)
 	if digit<2 and DigitMustAtLeastTwo:
 		msg='Amount of digits should be at least 2.'+'\nAt: function:display_datetime, module:'+__name__
-		if not IgnoreDataManipulation and not RaiseDataManipulationError: _warnings.warn(msg,ValueWarning)
+		if not IgnoreDataManipulation and not RaiseDataManipulationError: alternative_warn(msg,ValueWarning,'add_lead_zero')
 		if RaiseDataManipulationError: raise ValueError(msg)
 	# Reuse variable 'digit'
 	if num>=0:
@@ -230,7 +245,7 @@ def add_lead_zero(num,digit,IgnoreDataManipulation=False,RaiseDataManipulationEr
 		else: return '-'+num
 	else:
 		msg='Defined digits amount is less than digits of number in inputted integer. It possibly means that some of used data has been manipulated incorrectly.'+'\nAt: function:display_datetime, module:'+__name__
-		if not IgnoreDataManipulation and not RaiseDataManipulationError: _warnings.warn(msg,ValueWarning)
+		if not IgnoreDataManipulation and not RaiseDataManipulationError: alternative_warn(msg,ValueWarning,'add_lead_zero')
 		if RaiseDataManipulationError: raise ValueError(msg)
 		if not IsNegative: return num
 		else: return '-'+num
