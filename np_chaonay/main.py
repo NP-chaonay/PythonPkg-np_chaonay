@@ -6,7 +6,7 @@
 #       - Major version: indicates of very significant changes or changes that break compatibility on some system/platforms.
 #       - Minor version: indicates of significant changes or features adding.
 #       - Micro version: indicates of small changes or bug patches, or even typo revising.
-# Revised Date: 2020-07-14 09:56 (UTC)
+# Revised Date: 2020-07-14 10:13 (UTC)
 # License: MIT License
 # Programming Language: Python
 # CUI/GUI Language: English
@@ -23,6 +23,7 @@ Module Contents (excluding _*) :
 - alternative_issubclass (function)
 - arg_value_error (function)
 - print_categorical_bracket (function)
+- alternative_warn (function)
 + Documentation isn't fully implemented :
     - Namespace (class)
 + Type-checking is not fully implemented :
