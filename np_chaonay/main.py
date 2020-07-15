@@ -6,7 +6,7 @@
 #       - Major version: indicates of very significant changes or changes that break compatibility on some system/platforms.
 #       - Minor version: indicates of significant changes or features adding.
 #       - Micro version: indicates of small changes or bug patches, or even typo revising.
-# Revised Date: 2020-07-14 10:13 (UTC)
+# Revised Date: 2020-07-15 15:57 (UTC)
 # License: MIT License
 # Programming Language: Python
 # CUI/GUI Language: English
@@ -24,6 +24,7 @@ Module Contents (excluding _*) :
 - arg_value_error (function)
 - print_categorical_bracket (function)
 - alternative_warn (function)
+- str_to_bool (function)
 + Documentation isn't fully implemented :
     - Namespace (class)
 + Type-checking is not fully implemented :
@@ -183,6 +184,32 @@ def alternative_warn(msg,warning_class,func_name='(UNSPECIFIED)'):
 	alternative_issubclass('warning_class',(Warning,),warning_class)
 	# Skipping stack of this code and this function, using stack level 3.
 	_warnings.warn(msg+'\nAt: function:'+func_name+' in module:'+__name__,warning_class,3)
+
+def str_to_bool(string,default=0):
+	"""String to boolean implementation
+	
+	Arguments:
+	- string (str-alike): Text to convert to boolean
+	Optional Arguments:
+	- default (int-alike of value {-1,0,1}): Choose behavior when inputted string is not matched to specified word.
+		0: Raise exception
+		1: Return True
+		-1: Return False
+	
+	Specified Words:
+	- as True: ['true','1','yes','off','disable','disabled']
+	- as False: ['false','0','no','on','enable','enabled']
+	"""
+	alternative_isinstance('string',(str,),string)
+	alternative_isinstance('default',(int,),default)
+	if default not in (-1,0,1): raise arg_value_error('default','be value of {-1,0,1}')
+	string=string.lower()
+	if string in ['false','0','no','on','enable','enabled']: return False
+	elif string in ['true','1','yes','off','disable','disabled']: return True
+	else:
+		if default==1: return True
+		elif default==-1: return False
+		else: raise arg_value_error('string','be specified word')
 
 ######## Documentation isn't fully implemented ########
 
