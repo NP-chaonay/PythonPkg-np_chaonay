@@ -1,6 +1,14 @@
 [REMARK]
 - Updating of common files with common changing (ex. versioning changing in CHANGELOG, setup.py) should not be included here.
 
+1.2.0_dev
+        - (package)/main.py: 2.3.0_stable -> 2.4.0_stable
+                - Add 2 functions
+                        - is_integer_string
+                        - is_decimal_string
+	- (package)/math.py (1.0.3_dev -> 1.0.3_dev1)
+		- Fix function docs
+
 1.1.0_dev
 	- Inherits changes from 1.1.0
 		- ./SECURITY.md: created

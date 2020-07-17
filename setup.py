@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="np_chaonay",
-    version="1.1.0.dev",
+    version="1.2.0.dev",
     author="Nuttapong Punpipat",
     author_email="nuttapongpunpipat@gmail.com",
     description="Objects collection package by NP-chaonay",
