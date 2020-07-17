@@ -6,7 +6,7 @@
 #       - Major version: indicates of very significant changes or changes that break compatibility on some system/platforms.
 #       - Minor version: indicates of significant changes or features adding.
 #       - Micro version: indicates of small changes or bug patches, or even typo revising.
-# Revised Date: 2020-07-15 15:57 (UTC)
+# Revised Date: 2020-07-17 05:05 (UTC)
 # License: MIT License
 # Programming Language: Python
 # CUI/GUI Language: English
@@ -25,6 +25,7 @@ Module Contents (excluding _*) :
 - print_categorical_bracket (function)
 - alternative_warn (function)
 - str_to_bool (function)
+- is_only_one_True (function)
 + Documentation isn't fully implemented :
     - Namespace (class)
 + Type-checking is not fully implemented :
@@ -210,6 +211,20 @@ def str_to_bool(string,default=0):
 		if default==1: return True
 		elif default==-1: return False
 		else: raise arg_value_error('string','be specified word')
+
+def is_only_one_True(bools):
+	# QualityCheckTags: DOCS,INPUTCHECK,RETURNVALUEDOCS,OVERALL
+	"""Check if boolean-mapped iterable object has only 1 "True" truth value.
+	
+	Arguments:
+	- bools (iterable object): iterable object to check
+	
+	Return:
+	True if boolean-mapped iterable object has only 1 "True" truth value, else False.
+	"""
+	bools=tuple(map(bool,bools))
+	if bools.count(True)==1: return True
+	else: return False
 
 ######## Documentation isn't fully implemented ########
 
