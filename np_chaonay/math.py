@@ -1,22 +1,23 @@
 # Name: NP-chaonay/Math Python module
 # Description: Module contains object for mathematics usage
 # Author: NP-chaonay (Nuttapong Punpipat)
-# Version: V.1.0.3_dev
+# Version: V.1.0.(4)_dev
 # Version Note: 
 #       - Major version: indicates of very significant changes or changes that break compatibility on some system/platforms.
 #       - Minor version: indicates of significant changes or features adding.
 #       - Micro version: indicates of small changes or bug patches, or even typo revising.
-# Revised Date: 2020-07-13 09:52 (UTC)
+# Revised Date: 2020-07-17 06:39 (UTC)
 # License: MIT License
 # Programming Language: Python
 # CUI/GUI Language: English
 
-__version__='1.0.3.dev'
+__version__='1.0.4.dev'
 __doc__="""
 Module contains object for mathematics usage
 
 Module Contents (excluding _*) :
 - prime_generator (function)
+- polymonial_long_division (function)
 """
 
 ######## Initialization ########
