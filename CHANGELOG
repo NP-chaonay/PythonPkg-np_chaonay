@@ -1,15 +1,20 @@
 [REMARK]
 - Updating of common files with common changing (ex. versioning changing in CHANGELOG, setup.py) should not be included here.
 
-1.0.7
-	- Changes from 1.0.6 (Permanently deleted)
-		- Adding DeprecationWarning for class 'Namespace' in package 'np_chaonay.main'
-		- newer README
-		- Hide external used module
-		- Adding author notice
-	- Adding upload tool for author
-	- newer README
-	- Adding CHANGELOG
-1.0.4 (Initial release)
-	- Adding main, math modules
-	- Adding humour.main modules
+1.1.0_dev
+	- Inherits changes from 1.1.0
+		- ./SECURITY.md: created
+		- ./AUTHOR-NOTICES: updated
+		- ./setup.py: Update license classifier
+		- Create FOR-AUTHOR directory and move related files into it
+		- ./FOR-AUTHOR/pypi-update.sh: updated
+		- ./FOR-AUTHOR/testing.sh: created
+		- (package)/main.py: Add function and editing misc.
+			- alternative_warn (function) added.
+			- str_to_bool (function) added.
+			- is_only_one_True (function) added.
+			- is_iterable (function) added.
+		- (package)/math.py: typo fixed.
+	- Adapt software to development branch
+	- (package)/math.py: Add function.
+			- polymonial_long_division (function) added.

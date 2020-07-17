@@ -1,7 +1,7 @@
 # Name: NP-chaonay/Main Python module
 # Description: Module contains object for general usage
 # Author: NP-chaonay (Nuttapong Punpipat)
-# Version: V.2.2.3_stable
+# Version: V.2.3.0_dev
 # Version Note: 
 #       - Major version: indicates of very significant changes or changes that break compatibility on some system/platforms.
 #       - Minor version: indicates of significant changes or features adding.
@@ -11,7 +11,7 @@
 # Programming Language: Python
 # CUI/GUI Language: English
 
-__version__='2.2.3'
+__version__='2.3.0.dev'
 __doc__="""
 Module contains object for general usage
 
