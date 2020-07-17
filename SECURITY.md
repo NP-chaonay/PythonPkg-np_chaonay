@@ -11,6 +11,8 @@ This table below tell exactly what versions are security-supported.
 |All releases|:white_check_mark:|
 |(MARKDOWN RESERVED)|:x:|
 
+NOTES: Development versions are not security-suuported.
+
 ## Reporting a Vulnerability
 
 All security-related bug reports will have more priority than general bug reports and features improvement, unless specified in this file below.

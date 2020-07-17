@@ -1,15 +1,29 @@
 [REMARK]
 - Updating of common files with common changing (ex. versioning changing in CHANGELOG, setup.py) should not be included here.
 
-1.0.7
-	- Changes from 1.0.6 (Permanently deleted)
-		- Adding DeprecationWarning for class 'Namespace' in package 'np_chaonay.main'
-		- newer README
+1.1.0_stable
+	- ./SECURITY.md: created
+	- ./AUTHOR-NOTICES: updated
+	- ./setup.py: Update license classifier
+	- Create FOR-AUTHOR directory and move related files into it
+	- ./FOR-AUTHOR/pypi-update.sh: updated
+	- ./FOR-AUTHOR/testing.sh: created
+	- (package)/main.py: Add function and editing misc.
+		- alternative_warn (function) added.
+		- str_to_bool (function) added.
+		- is_only_one_True (function) added.
+		- is_iterable (function) added.
+	- (package)/math.py: typo fixed.
+
+1.0.7_stable
+	- Changes from 1.0.6_stable (Permanently deleted)
+		- (package)/main.py: Adding DeprecationWarning for class 'Namespace'
+		- ./README.md: updated to newer README
 		- Hide external used module
-		- Adding author notice
-	- Adding upload tool for author
-	- newer README
-	- Adding CHANGELOG
-1.0.4 (Initial release)
-	- Adding main, math modules
-	- Adding humour.main modules
+		- ./AUTHOR-NOTICES: Adding author notice
+	- ./pypi-update.sh: Adding upload tool for author
+	- ./README.md: newer README
+	- ./CHANGELOG: Adding CHANGELOG
+1.0.4_stable (Initial release)
+	- (package): Adding main, math modules
+	- (package): Adding humour.main modules

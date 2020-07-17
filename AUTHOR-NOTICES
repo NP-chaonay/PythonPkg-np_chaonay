@@ -1,5 +1,6 @@
 # Changes Pushing
 - Revised Date must be always updated.
+- Version changing required tag must be specificied when needed.
 - Recommended to not change the version.
 # Release Publishing
 - Checking for changed files, changing the version of those.
