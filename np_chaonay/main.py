@@ -1,17 +1,17 @@
 # Name: NP-chaonay/Main Python module
 # Description: Module contains object for general usage
 # Author: NP-chaonay (Nuttapong Punpipat)
-# Version: V.2.3.0_stable
+# Version: V.2.4.0_stable
 # Version Note: 
 #       - Major version: indicates of very significant changes or changes that break compatibility on some system/platforms.
 #       - Minor version: indicates of significant changes or features adding.
 #       - Micro version: indicates of small changes or bug patches, or even typo revising.
-# Revised Date: 2020-07-17 05:42 (UTC)
+# Revised Date: 2020-07-17 07:28 (UTC)
 # License: MIT License
 # Programming Language: Python
 # CUI/GUI Language: English
 
-__version__='2.3.0'
+__version__='2.4.0'
 __doc__="""
 Module contains object for general usage
 
@@ -27,6 +27,8 @@ Module Contents (excluding _*) :
 - str_to_bool (function)
 - is_only_one_True (function)
 - is_iterable (function)
+- is_integer_string (function)
+- is_decimal_string (function)
 + Documentation isn't fully implemented :
     - Namespace (class)
 + Type-checking is not fully implemented :
@@ -240,6 +242,62 @@ def is_iterable(obj):
 	"""
 	if '__iter__' in dir(obj): return True
 	else: return False
+
+def is_integer_string(string):
+	# QualityCheckTags: DOCS,INPUTCHECK,RETURNVALUEDOCS,OVERALL
+	"""Check if inputted string is integer
+	
+	Arguments:
+	- string (str-alike): Text to check
+	
+	Returns:
+	True if inputted string is integer, else False.
+	
+	Examples:
+	- +5, -1, 0 -> True
+	"""
+	## Type checking
+	alternative_isinstance('string',(str,),string)
+	##
+	# For empty string
+	if not string: return False
+	# Left-most digit
+	if string[0] not in ['-','+','0','1','2','3','4','5','6','7','8','9']: return False
+	# Other digits
+	for i in string[1:]:
+		if i not in ['0','1','2','3','4','5','6','7','8','9']: return False
+	return True
+
+def is_decimal_string(string):
+	# QualityCheckTags: DOCS,INPUTCHECK,RETURNVALUEDOCS,OVERALL
+	"""Check if inputted string is decimal
+	
+	Arguments:
+	- string (str-alike): Text to check
+	
+	Returns:
+	True if inputted string is decimal, else False.
+	
+	Examples:
+	- +5, -1, 0 -> True
+	- 5.2, 0.44, .33, +33. -> True
+	"""
+	## Type checking
+	alternative_isinstance('string',(str,),string)
+	##
+	# For empty string
+	if not string: return False
+	# Left-most digit
+	if string[0] not in ['-','+','.','0','1','2','3','4','5','6','7','8','9']: return False
+	# Other digits
+	for i in string[1:]:
+		if i not in ['.','0','1','2','3','4','5','6','7','8','9']: return False
+	# Check if has multiple '.'
+	c=0
+	for i in string:
+		if i=='.': c+=1
+	if c>1: return False
+	return True
 
 ######## Documentation isn't fully implemented ########
 

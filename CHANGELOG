@@ -1,6 +1,12 @@
 [REMARK]
 - Updating of common files with common changing (ex. versioning changing in CHANGELOG, setup.py) should not be included here.
 
+1.2.0_stable
+	- (package)/main.py: 2.3.0_stable -> 2.4.0_stable
+		- Add 2 functions
+			- is_integer_string
+			- is_decimal_string
+
 1.1.0_stable
 	- ./SECURITY.md: created
 	- ./AUTHOR-NOTICES: updated
