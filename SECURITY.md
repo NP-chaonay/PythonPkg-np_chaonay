@@ -11,7 +11,7 @@ This table below tell exactly what versions are security-supported.
 |All releases|:white_check_mark:|
 |(MARKDOWN RESERVED)|:x:|
 
-NOTES: Development versions are not security-suuported.
+NOTES: Development versions are not security-supported.
 
 ## Reporting a Vulnerability
 
