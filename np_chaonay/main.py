@@ -1,12 +1,12 @@
 # Name: NP-chaonay/Main Python module
 # Description: Module contains object for general usage
 # Author: NP-chaonay (Nuttapong Punpipat)
-# Version: V.2.4.0_stable
+# Version: V.2.4.(0)_stable
 # Version Note: 
 #       - Major version: indicates of very significant changes or changes that break compatibility on some system/platforms.
 #       - Minor version: indicates of significant changes or features adding.
 #       - Micro version: indicates of small changes or bug patches, or even typo revising.
-# Revised Date: 2020-07-17 07:28 (UTC)
+# Revised Date: 2020-07-22 10:17 (UTC)
 # License: MIT License
 # Programming Language: Python
 # CUI/GUI Language: English
