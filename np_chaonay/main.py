@@ -61,7 +61,7 @@ def display_datetime(epoch_time=None):
 	- epoch_time (None, int-alike, or float-alike) : Set timestamp from epoch to be displayed. Set as None to get the current time instead.
 	"""
 	if epoch_time is not None and not isinstance(epoch_time,(int,float)):
-		raise TypeError('Inputted value for \'epoch_time\' should be None, integer-like, or float-like, not \''+epoch_time.__class__.__name__+'\'.'+'\nAt: function:display_datetime, module:'+__name__)
+		raise TypeError('Inputted value for \'epoch_time\' should be None, integer-like, or float-like, not \''+epoch_time.__class__.__name__+'\'.')
 	if epoch_time is None:
 		epoch_time=_time.time()
 	epoch_time=list(map(lambda x:add_lead_zero(x,2,True),_time.localtime(epoch_time)))
@@ -334,12 +334,12 @@ def add_lead_zero(num,digit,IgnoreDataManipulation=False,RaiseDataManipulationEr
 	- Digit should be at least 2. (Ignore by default)
 	- Amount of defined digits is less than digits of number in inputted integer.
 	"""
-	if type(num) is not int or type(digit) is not int: raise TypeError('parameters \'num\', \'digit\' should be integer.'+'\nAt: function:display_datetime, module:'+__name__)
-	if type(IgnoreDataManipulation) is not bool or type(RaiseDataManipulationError) is not bool or type(DigitMustAtLeastTwo) is not bool: raise TypeError('parameters \'IgnoreDataManipulation\', \'RaiseDataManipulationError\', and \'DigitMustAtLeastTwo\' should be boolean.'+'\nAt: function:display_datetime, module:'+__name__)
+	if type(num) is not int or type(digit) is not int: raise TypeError('parameters \'num\', \'digit\' should be integer.')
+	if type(IgnoreDataManipulation) is not bool or type(RaiseDataManipulationError) is not bool or type(DigitMustAtLeastTwo) is not bool: raise TypeError('parameters \'IgnoreDataManipulation\', \'RaiseDataManipulationError\', and \'DigitMustAtLeastTwo\' should be boolean.')
 	if IgnoreDataManipulation: RaiseDataManipulationError=False
-	if digit<1: raise ValueError('Digit should be at least one.'+'\nAt: function:display_datetime, module:'+__name__)
+	if digit<1: raise ValueError('Digit should be at least one.')
 	if digit<2 and DigitMustAtLeastTwo:
-		msg='Amount of digits should be at least 2.'+'\nAt: function:display_datetime, module:'+__name__
+		msg='Amount of digits should be at least 2.'
 		if not IgnoreDataManipulation and not RaiseDataManipulationError: alternative_warn(msg,ValueWarning,'add_lead_zero')
 		if RaiseDataManipulationError: raise ValueError(msg)
 	# Reuse variable 'digit'
@@ -360,7 +360,7 @@ def add_lead_zero(num,digit,IgnoreDataManipulation=False,RaiseDataManipulationEr
 		if not IsNegative: return num
 		else: return '-'+num
 	else:
-		msg='Defined digits amount is less than digits of number in inputted integer. It possibly means that some of used data has been manipulated incorrectly.'+'\nAt: function:display_datetime, module:'+__name__
+		msg='Defined digits amount is less than digits of number in inputted integer. It possibly means that some of used data has been manipulated incorrectly.'
 		if not IgnoreDataManipulation and not RaiseDataManipulationError: alternative_warn(msg,ValueWarning,'add_lead_zero')
 		if RaiseDataManipulationError: raise ValueError(msg)
 		if not IsNegative: return num
