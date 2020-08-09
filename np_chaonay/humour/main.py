@@ -1,12 +1,12 @@
 # Name: NP-chaonay/Humour/Main Python module
 # Description: Main module for humour-related objects
 # Author: NP-chaonay (Nuttapong Punpipat)
-# Version: V.1.0.2_dev
+# Version: V.1.0.(2)_dev
 # Version Note:
 #       - Major version: indicates of very significant changes or changes that break compatibility on some system/platforms.
 #       - Minor version: indicates of significant changes or features adding.
 #       - Micro version: indicates of small changes or bug patches, or even typo revising.
-# Revised Date: 2020-07-01 16:41 (UTC)
+# Revised Date: 2020-08-09 13:21 (UTC)
 # License: MIT License
 # Programming Language: Python
 # CUI/GUI Language: English
@@ -18,7 +18,7 @@ Main module for humour-related objects
 HAVING FUN!!!
 """
 
-import _time
+import time as _time
 
 # Class look like function, however you wouldn't run this right?"""
 class run_python():
