@@ -1,4 +1,4 @@
-# Welcome to NP-chaonay object collection Python package (np_chaonay)
+# NP-chaonay object collection Python package (np_chaonay)
 
 *For GitHub viewer/user, please see ./GITHUB-NOTICES*
 
