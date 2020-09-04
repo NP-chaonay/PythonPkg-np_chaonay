@@ -1,7 +1,7 @@
 # Name: NP-chaonay/Main Python module
 # Description: Module contains object for general usage
 # Author: NP-chaonay (Nuttapong Punpipat)
-# Version: V.2.4.(0)_stable
+# Version: V.2.(4).(0)_stable
 # Version Note: 
 #       - Major version: indicates of very significant changes or changes that break compatibility on some system/platforms.
 #       - Minor version: indicates of significant changes or features adding.
@@ -29,6 +29,7 @@ Module Contents (excluding _*) :
 - is_iterable (function)
 - is_integer_string (function)
 - is_decimal_string (function)
+- new_pandas_dataframe_with_dtype (function)
 + Documentation isn't fully implemented :
     - Namespace (class)
 + Type-checking is not fully implemented :
@@ -298,6 +299,29 @@ def is_decimal_string(string):
 		if i=='.': c+=1
 	if c>1: return False
 	return True
+
+def new_pandas_dataframe_with_dtype(columns,dtypes):
+    # QualityCheckTags:
+    # [/] CODE
+    # [/] INPUTCHECK
+    # [/] DOCS
+    # [ ] TEST
+    """Create new empty Pandas DataFrame with specific columns on specific dtype
+    
+    Arguments:
+    - columns (iterable): iterable of columns name
+    - dtypes (iterable): iterable of columns dtype
+    
+    Return:
+    modified Pandas DataFrame
+    
+    """
+    if not is_iterable(columns): raise arg_value_error('columns','be iterable')
+    if not is_iterable(dtypes): raise arg_value_error('dtypes','be iterable')
+    if columns and dtypes: pass
+    else: raise ValueError('\'columns\' and \'dtypes\' must not be empty.')
+    import pandas as pd
+    return pd.DataFrame([],columns=columns).astype(dict(zip(columns,dtypes)))
 
 ######## Documentation isn't fully implemented ########
 
