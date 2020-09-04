@@ -1,10 +1,10 @@
 # 1 ############################################################################
 def example_quality_func():
 	# QualityCheckTags:
-	# [/] CODE
-	# [/] INPUTCHECK
-	# [/] DOCS
-	# [/] TEST
+	# [] CODE
+	# [] INPUTCHECK
+	# [] DOCS
+	# [] TEST
 	"""<DESC>
 	
 	Arguments:
@@ -26,10 +26,10 @@ def example_quality_func():
 # 2 ############################################################################
 class Vector():
 	# QualityCheckTags:
-	# [/] CODE
-	# [/] INPUTCHECK
-	# [/] DOCS
-	# [/] TEST
+	# [] CODE
+	# [] INPUTCHECK
+	# [] DOCS
+	# [] TEST
 	''' Vector implementation
 	
 	# Object Creation
