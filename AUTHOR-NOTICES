@@ -1,9 +1,40 @@
 # Changes Pushing
 - Revised Date must be always updated.
 - Version changing required tag must be specificied when needed.
-- Recommended to not change the version.
+- Files: np_chaonay/, setup.py, README; are supposed to be updated with PyPi
+- CHANGELOG should be updated on Github or local, ASAP.
+
 # Release Publishing
-- Checking for changed files, changing the version of those.
-- Changing the version in README, LICENSE, setup.py, and others related.
-- Changing on files on np_chaonay/, setup.py, README; requires release publishing when ready, else no need to upgrade package version.
-- For general case, this command speeds up: "nano README.md np_chaonay/__init__.py setup.py CHANGELOG"
+1) Checking for changed files, changing the version of those.
+2) Changing the version in README, CHANGELOG, setup.py, np_chaonay/__init__.py, and others related.
+	- For general case, this command speeds up: "nano README.md np_chaonay/__init__.py setup.py CHANGELOG"
+3) Checking things, then create tags, and upload.
+
+# GitHub Template
+	# Section1
+[np_chaonay] 
+[np_chaonay.main] 
+[np_chaonay.math] 
+[np_chaonay.humour.main] 
+
+	# Section2
+Versioning changed
+[np_chaonay] Prepare for upgrading the new version
+
+	# Section3
++ [np_chaonay] (.. > ..)
+	+ [np_chaonay.humour.main] (.. > ..)
+		- 
+	+ [np_chaonay.main] (.. > ..)
+		- 
+	+ [np_chaonay.math] (.. > ..)
+		- 
+
+	# Section4
++ [np_chaonay] (.._dev > .._dev)
+	+ [np_chaonay.humour.main] (.._dev > .._dev)
+		- 
+	+ [np_chaonay.main] (.._dev > .._dev)
+		- 
+	+ [np_chaonay.math] (.._dev > .._dev)
+		- 
