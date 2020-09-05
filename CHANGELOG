@@ -2,6 +2,11 @@
 - Python package contents, setup.py, README.md changes are included
 - Other significant changes may also included
 
++ [np_chaonay] (1.3.0_dev > ???)
+	- "Revised Date" correction for many modules
+        + [np_chaonay.math] (1.1.0_dev > ???)
+                - Fixs bug for class "Vector"
+
 + [np_chaonay] (1.2.0_dev > 1.3.0_dev)
 	+ [np_chaonay.humour.main] (1.0.2_dev > 1.0.3_dev)
 		- Fix ImportError when importing np_chaonay.humour.main
