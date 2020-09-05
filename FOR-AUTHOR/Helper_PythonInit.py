@@ -8,7 +8,7 @@ def nano(file):
 	sp.run(['nano',file])
 def gedit(file):
 	sp.Popen(['gedit',file])
-def ls(path=''):
+def ls(path='.'):
 	sp.Popen(['ls',path])
 
 ### Create and upload Git tag
