@@ -1,12 +1,12 @@
 # Name: NP-chaonay/Math Python module
 # Description: Module contains object for mathematics usage
 # Author: NP-chaonay (Nuttapong Punpipat)
-# Version: V.1.1.0_stable
+# Version: V.1.1.(0)_stable
 # Version Note:
 #       - Major version: indicates of very significant changes or changes that break compatibility on some system/platforms.
 #       - Minor version: indicates of significant changes or features adding.
 #       - Micro version: indicates of small changes or bug patches, or even typo revising.
-# Revised Date: 2020-07-13 10:12 (UTC)
+# Revised Date: 2020-09-05 11:45 (UTC)
 # License: MIT License
 # Programming Language: Python
 # CUI/GUI Language: English
@@ -101,7 +101,7 @@ class Vector():
 	dimensions=[]
 	def __init__(self,*dimensions):
 		# Type Checking
-		for dimension in dimensions: npc_m.alternative_isinstance('*dimensions',(int,float),dimension)
+		for dimension in dimensions: _npc_m.alternative_isinstance('*dimensions',(int,float),dimension)
 		self.dimensions=list(dimensions)
 	def __repr__(self):
 		return 'Vector('+repr(self.dimensions)[1:-1]+')'
@@ -123,7 +123,7 @@ class Vector():
 				raise ValueError('Adding vectors with different dimensions.')
 		else:
 			# Type Checking (Adding type(self) for exception displaying
-			npc_m.alternative_isinstance('adding value',(int,float,type(self)),another)
+			_npc_m.alternative_isinstance('adding value',(int,float,type(self)),another)
 			new_dimensions=[]
 			for i in range(len(self.dimensions)):
 				new_dimensions+=[self.dimensions[i]+another]
@@ -139,7 +139,7 @@ class Vector():
 				raise ValueError('Subtracting vectors with different dimensions.')
 		else:
 			# Type Checking (Adding type(self) for exception displaying
-			npc_m.alternative_isinstance('adding value',(int,float,type(self)),another)
+			_npc_m.alternative_isinstance('adding value',(int,float,type(self)),another)
 			new_dimensions=[]
 			for i in range(len(self.dimensions)):
 				new_dimensions+=[self.dimensions[i]-another]
@@ -149,7 +149,7 @@ class Vector():
 			raise ValueError('Muliplying vectors is not implemented yet.')
 		else:
 			# Type Checking
-			npc_m.alternative_isinstance('adding value',(int,float),another)
+			_npc_m.alternative_isinstance('adding value',(int,float),another)
 			new_dimensions=[]
 			for i in range(len(self.dimensions)):
 				new_dimensions+=[self.dimensions[i]*another]
