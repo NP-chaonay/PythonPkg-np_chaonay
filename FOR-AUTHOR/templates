@@ -35,7 +35,7 @@ class Vector():
 	# Object Creation
 	    Vector(*dimensions)
 	  Optional Arguments:
-	  - *dimensions (int,float): Value of each dimensions
+	  - *dimensions (int-alike,float-alike): Value of each dimensions
 	
 	# Object Representation
 	  >>> Vector(-1,0,1)
@@ -71,7 +71,7 @@ class Vector():
 	    Returns: Magnitude of vector
 	
 	# Variables
-	  - dimensions (list) : consists of dimensions' values
+	  - dimensions (iterable) : consists of dimensions' values
 	'''
 	dimensions=[]
 	def __init__(self,*dimensions):
