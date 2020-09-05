@@ -30,6 +30,8 @@ Module Contents (excluding _*) :
 - is_integer_string (function)
 - is_decimal_string (function)
 - new_pandas_dataframe_with_dtype (function)
+- slash_suffix_for_dir (function)
+- get_homedir (function)
 + Documentation isn't fully implemented :
     - Namespace (class)
 + Type-checking is not fully implemented :
@@ -41,6 +43,7 @@ Module Contents (excluding _*) :
 import warnings as _warnings
 import time as _time
 from types import SimpleNamespace as _Namespace
+import os as _os
 
 ######## Completed (Required for module initialization) ########
 
@@ -322,6 +325,38 @@ def new_pandas_dataframe_with_dtype(columns,dtypes):
     else: raise ValueError('\'columns\' and \'dtypes\' must not be empty.')
     import pandas as pd
     return pd.DataFrame([],columns=columns).astype(dict(zip(columns,dtypes)))
+
+def slash_suffix_for_dir(path):
+	# QualityCheckTags:
+	# [/] CODE
+	# [/] INPUTCHECK
+	# [/] DOCS
+	# [] TEST
+	"""Return directory path with '/' suffixed
+	
+	Arguments:
+	- path (str-alike): Inputted path for checking
+	
+	Return:
+	Directory path with '/' suffixed
+	
+	"""
+	alternative_isinstance('path',(str,),path)
+	return path.rstrip('/')+'/'
+
+def get_homedir():
+	# QualityCheckTags:
+	# [/] CODE
+	# [/] INPUTCHECK
+	# [/] DOCS
+	# [] TEST
+	"""Return home directory path
+	
+	Return:
+	Home directory path
+	
+	"""
+	return os.environ['HOME']
 
 ######## Documentation isn't fully implemented ########
 
