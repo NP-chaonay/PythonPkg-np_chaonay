@@ -356,7 +356,7 @@ def get_homedir():
 	Home directory path
 	
 	"""
-	return os.environ['HOME']
+	return _os.environ['HOME']
 
 ######## Documentation isn't fully implemented ########
 
