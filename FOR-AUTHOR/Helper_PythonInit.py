@@ -33,16 +33,20 @@ def SW_diff(path,a='origin/master',b='origin/development'):
 	sp.run(['git', 'diff', a, b, '--', path])
 
 def SW_git_push(msg):
-	if not msg: npc_m.print_categorical_bracket('git_push:ERROR','GIT push function requires committing message.')
+	if not msg:
+		npc_m.print_categorical_bracket('git_push:ERROR','GIT push function requires committing message.')
+		return
 	npc_m.print_categorical_bracket('git_push','GIT Add')
 	sp_log=sp.run(['git', 'add', '.'])
 	if sp_log.returncode!=0:
 		npc_m.print_categorical_bracket('git_push:ERROR','GIT Add Error')
+		return
 	npc_m.print_categorical_bracket('git_push','GIT Commit')
 	sp_log=sp.run(['git', 'commit', '-m', msg])
 	if sp_log.returncode!=0:
 		npc_m.print_categorical_bracket('git_push:ERROR','GIT Commit Error, undoing changes staging.')
 		sp.run(['git', 'reset'])
+		return
 	npc_m.print_categorical_bracket('git_push','GIT Push')
 	sp.run(['python3', npc_m.slash_suffix_for_dir(npc_m.get_homedir())+".password/ ", 'github'])	
 	sp_log=sp.run(['git', 'push'])
@@ -50,3 +54,4 @@ def SW_git_push(msg):
 		npc_m.print_categorical_bracket('git_push:ERROR','GIT Push Error, cancelling commit.')
 		sp.run(['git', 'reset', '--soft', 'HEAD^'])
 		sp.run(['git', 'reset'])
+		return
