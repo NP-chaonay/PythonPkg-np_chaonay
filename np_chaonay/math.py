@@ -103,7 +103,7 @@ class Vector():
 	# Object Creation
 	    Vector(*dimensions)
 	  Optional Arguments:
-	  - *dimensions (int,float): Value of each dimensions
+	  - *dimensions (int-alike,float-alike): Value of each dimensions
 	
 	# Object Representation
 	  >>> Vector(-1,0,1)
@@ -139,12 +139,12 @@ class Vector():
 	    Returns: Magnitude of vector
 	
 	# Variables
-	  - dimensions (list) : consists of dimensions' values
+	  - dimensions (iterable) : consists of dimensions' values
 	'''
 	dimensions=[]
 	def __init__(self,*dimensions):
 		# Type Checking
-		for dimension in dimensions: _npc_m.alternative_isinstance('*dimensions',(int,float),dimension)
+		for dimension in dimensions: npc_m.alternative_isinstance('*dimensions',(int,float),dimension)
 		self.dimensions=list(dimensions)
 	def __repr__(self):
 		return 'Vector('+repr(self.dimensions)[1:-1]+')'
@@ -166,7 +166,7 @@ class Vector():
 				raise ValueError('Adding vectors with different dimensions.')
 		else:
 			# Type Checking (Adding type(self) for exception displaying
-			_npc_m.alternative_isinstance('adding value',(int,float,type(self)),another)
+			npc_m.alternative_isinstance('adding value',(int,float,type(self)),another)
 			new_dimensions=[]
 			for i in range(len(self.dimensions)):
 				new_dimensions+=[self.dimensions[i]+another]
@@ -182,7 +182,7 @@ class Vector():
 				raise ValueError('Subtracting vectors with different dimensions.')
 		else:
 			# Type Checking (Adding type(self) for exception displaying
-			_npc_m.alternative_isinstance('adding value',(int,float,type(self)),another)
+			npc_m.alternative_isinstance('adding value',(int,float,type(self)),another)
 			new_dimensions=[]
 			for i in range(len(self.dimensions)):
 				new_dimensions+=[self.dimensions[i]-another]
@@ -192,7 +192,7 @@ class Vector():
 			raise ValueError('Muliplying vectors is not implemented yet.')
 		else:
 			# Type Checking
-			_npc_m.alternative_isinstance('adding value',(int,float),another)
+			npc_m.alternative_isinstance('adding value',(int,float),another)
 			new_dimensions=[]
 			for i in range(len(self.dimensions)):
 				new_dimensions+=[self.dimensions[i]*another]
