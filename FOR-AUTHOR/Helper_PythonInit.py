@@ -3,12 +3,13 @@ import sys,os
 import subprocess as sp
 import np_chaonay.main as npc_m
 
-### Nano wrapper
+### Shell Utilities and Application Commands Wrapper
 def nano(file):
 	sp.run(['nano',file])
-
 def gedit(file):
 	sp.Popen(['gedit',file])
+def ls(path=''):
+	sp.Popen(['ls',path])
 
 ### Create and upload Git tag
 def new_uploading_tag(tag_name,tag_desc=None,commit=None):
