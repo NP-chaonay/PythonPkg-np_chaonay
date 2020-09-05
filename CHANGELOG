@@ -1,5 +1,17 @@
 [REMARK]
-- Updating of common files with common changing (ex. versioning changing in CHANGELOG, setup.py) should not be included here.
+- Python package contents, setup.py, README.md changes are included
+- Other significant changes may also included
+
++ [np_chaonay] (1.2.0 > 1.3.0)
+	+ [np_chaonay.humour.main] (1.0.2 > 1.0.3)
+		- Fix ImportError when importing np_chaonay.humour.main
+	+ [np_chaonay.main] (2.4.0 > 2.5.0)
+		- New function "new_pandas_dataframe_with_dtype"
+		- New function "slash_suffix_for_dir"
+		- New function "get_homedir"
+		- Minor code improvements
+	+ [np_chaonay.math] (1.0.3 > 1.1.0)
+		- New class "Vector"
 
 1.2.0_stable
 	- (package)/main.py: 2.3.0_stable -> 2.4.0_stable

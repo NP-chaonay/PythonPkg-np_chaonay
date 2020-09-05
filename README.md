@@ -3,11 +3,11 @@
 *For GitHub viewer/user, please see ./GITHUB-NOTICES*
 
 ## Package/Module Table of Contents (with versioning)
-+ np_chaonay (1.2.0_stable)
-	- main: Module contains object for general usage (2.4.0_stable)
-	- math: Module contains object for mathematics usage (1.0.3_stable)
-	+ humour (package): Humour-related objects collection package (1.0.2_stable)
-		- main: Main module for humour-related objects (1.0.2_stable)
++ np_chaonay (1.3.0_stable)
+	- main: Module contains object for general usage (2.5.0_stable)
+	- math: Module contains object for mathematics usage (1.1.0_stable)
+	+ humour (package): Humour-related objects collection package (1.0.3_stable)
+		- main: Main module for humour-related objects (1.0.3_stable)
 
 ## Tricks and Tips
 - Generally, there not need to use this package unless you're going to use
