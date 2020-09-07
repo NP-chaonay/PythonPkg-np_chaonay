@@ -205,15 +205,15 @@ def str_to_bool(string,default=0):
 		-1: Return False
 	
 	Specified Words:
-	- as True: ['true','1','yes','off','disable','disabled']
-	- as False: ['false','0','no','on','enable','enabled']
+	- as True: ['true','1','yes','off','disable','disabled','t','y']
+	- as False: ['false','0','no','on','enable','enabled','f','n']
 	"""
 	alternative_isinstance('string',(str,),string)
 	alternative_isinstance('default',(int,),default)
 	if default not in (-1,0,1): raise arg_value_error('default','be value of {-1,0,1}')
 	string=string.lower()
-	if string in ['false','0','no','on','enable','enabled']: return False
-	elif string in ['true','1','yes','off','disable','disabled']: return True
+	if string in ['false','0','no','on','enable','enabled','t','y']: return False
+	elif string in ['true','1','yes','off','disable','disabled','f','n']: return True
 	else:
 		if default==1: return True
 		elif default==-1: return False
