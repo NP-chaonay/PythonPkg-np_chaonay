@@ -1,6 +1,5 @@
 # Changes Pushing
 - Revised Date must be always updated.
-- Version changing required tag must be specificied when needed.
 - Files: np_chaonay/, setup.py, README; are supposed to be updated with PyPi
 - CHANGELOG should be updated on Github or local, ASAP.
 
