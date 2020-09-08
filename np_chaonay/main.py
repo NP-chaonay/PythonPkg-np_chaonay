@@ -1,4 +1,5 @@
-# Name: NP-chaonay/Main Python module
+#!/usr/bin/env python3
+# Name: Python module "main" on Python package "np_chaonay"
 # Description: Module contains object for general usage
 # Author: NP-chaonay (Nuttapong Punpipat)
 # Version: V.2.5.0_dev

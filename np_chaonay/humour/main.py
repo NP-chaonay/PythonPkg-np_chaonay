@@ -1,4 +1,5 @@
-# Name: NP-chaonay/Humour/Main Python module
+#!/usr/bin/env python3
+# Name: Python module "main" on Python package "np_chaonay.humour"
 # Description: Main module for humour-related objects
 # Author: NP-chaonay (Nuttapong Punpipat)
 # Version: V.1.0.3_dev

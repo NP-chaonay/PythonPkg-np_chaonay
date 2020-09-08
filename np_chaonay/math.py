@@ -1,4 +1,5 @@
-# Name: NP-chaonay/Math Python module
+#!/usr/bin/env python3
+# Name: Python module "math" on Python package "np_chaonay"
 # Description: Module contains object for mathematics usage
 # Author: NP-chaonay (Nuttapong Punpipat)
 # Version: V.1.1.0_dev

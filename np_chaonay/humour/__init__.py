@@ -1,4 +1,5 @@
-# Name: NP-chaonay/Humour Python package
+#!/usr/bin/env python3
+# Name: Python package "np_chaonay.humour"
 # Description: Humour-related objects collection package
 # Author: NP-chaonay (Nuttapong Punpipat)
 # Version: V.1.0.3_dev
