@@ -22,4 +22,5 @@ Contents:
 - main: Module contains object for general usage
 - math: Module contains object for mathematics usage
 - humour (package): Humour-related objects collection package
+- pymusicnote: Module contains object for musical notation
 """

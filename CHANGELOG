@@ -2,13 +2,15 @@
 - Python package contents, setup.py, README.md changes are included
 - Other significant changes may also included
 
-+ [np_chaonay] (1.3.0_dev > 1.3.?_dev)
++ [np_chaonay] (1.3.0_dev > 1.?.?_dev)
 	- "Revised Date" correction for many modules
 	- "Name","Version" on codes' metadata is updated
         + [np_chaonay.math] (1.1.0_dev > 1.1.?_dev)
                 - Fixs bug for class "Vector"
         + [np_chaonay.main] (2.5.0_dev > 2.5.?_dev)
                 - In function "str_to_bool", the case-insensitive word "y","n","t","f" are allowed.
+	+ [np_chaonay.pymusicnote] (None > 0.0.0_dev)
+		- New module "pymusicnote" on root of package.
 
 + [np_chaonay] (1.2.0_dev > 1.3.0_dev)
 	+ [np_chaonay.humour.main] (1.0.2_dev > 1.0.3_dev)
