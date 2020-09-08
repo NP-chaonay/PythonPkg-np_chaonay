@@ -2,7 +2,7 @@
 # Name: Python package "np_chaonay"
 # Description: Objects collection Python package by NP-chaonay
 # Author: NP-chaonay (Nuttapong Punpipat)
-# Version: V.1.3.0_stable
+# Version: (See on Python metadata below)
 # Version Note:
 #       - Major version: indicates of very significant changes or changes that break compatibility on some system/platforms.
 #       - Minor version: indicates of significant changes or features adding.

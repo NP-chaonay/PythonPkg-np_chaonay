@@ -4,7 +4,7 @@
 
 + [np_chaonay] (1.3.0 > 1.3.?)
 	- "Revised Date" correction for many modules
-	- "Name" on codes' metadata is updated
+	- "Name","Version" on codes' metadata is updated
 	+ [np_chaonay.math] (1.1.0 > 1.1.?)
 		- Fixs bug for class "Vector"
 	+ [np_chaonay.main] (2.5.0 > 2.5.?)

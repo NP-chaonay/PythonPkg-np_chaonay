@@ -2,7 +2,7 @@
 # Name: Python module "math" on Python package "np_chaonay"
 # Description: Module contains object for mathematics usage
 # Author: NP-chaonay (Nuttapong Punpipat)
-# Version: V.1.1.0_stable
+# Version: (See on Python metadata below)
 # Version Note:
 #       - Major version: indicates of very significant changes or changes that break compatibility on some system/platforms.
 #       - Minor version: indicates of significant changes or features adding.
