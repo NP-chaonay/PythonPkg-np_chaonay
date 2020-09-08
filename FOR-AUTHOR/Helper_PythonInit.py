@@ -29,6 +29,10 @@ def SW_new_uploading_tag(version,development=False,commit=None):
 	tag_desc='Latest commit of version \''+version+'\''
 	new_uploading_tag(tag_name,tag_desc,commit)
 
+def SW_new_uploading_tag_1(tag_name,commit=None):
+	tag_desc='Latest commit of version \''+tag_name+'\''
+	new_uploading_tag(tag_name,tag_desc,commit)
+
 def SW_diff(path,a='origin/master',b='origin/development'):
 	sp.run(['git', 'diff', a, b, '--', path])
 
