@@ -2,7 +2,7 @@
 # Name: Python package "np_chaonay.humour"
 # Description: Humour-related objects collection package
 # Author: NP-chaonay (Nuttapong Punpipat)
-# Version: V.1.0.3_dev
+# Version: (See on Python metadata below)
 # Version Note: 
 #       - Major version: indicates of very significant changes or changes that break compatibility on some system/platforms.
 #       - Minor version: indicates of significant changes or features adding.

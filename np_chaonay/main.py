@@ -2,7 +2,7 @@
 # Name: Python module "main" on Python package "np_chaonay"
 # Description: Module contains object for general usage
 # Author: NP-chaonay (Nuttapong Punpipat)
-# Version: V.2.5.0_dev
+# Version: (See on Python metadata below)s
 # Version Note: 
 #       - Major version: indicates of very significant changes or changes that break compatibility on some system/platforms.
 #       - Minor version: indicates of significant changes or features adding.
