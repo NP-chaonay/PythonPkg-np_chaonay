@@ -12,7 +12,7 @@
 # Programming Language: Python
 # CUI/GUI Language: English
 
-__version__='2.5.0.dev1'
+__version__='2.5.1.dev1'
 __doc__="""
 Module contains object for general usage
 

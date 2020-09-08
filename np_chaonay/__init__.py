@@ -12,7 +12,7 @@
 # Programming Language: Python
 # CUI/GUI Language: English
 
-__version__='1.3.0.dev1'
+__version__='1.4.0.dev'
 __doc__ = """
 Objects collection package by NP-chaonay
 

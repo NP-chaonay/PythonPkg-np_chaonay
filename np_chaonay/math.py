@@ -12,7 +12,7 @@
 # Programming Language: Python
 # CUI/GUI Language: English
 
-__version__='1.1.0.dev1'
+__version__='1.1.1.dev'
 __doc__="""
 Module contains object for mathematics usage
 
