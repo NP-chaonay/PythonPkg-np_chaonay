@@ -16,7 +16,15 @@ def new_uploading_tag(tag_name,tag_desc=None,commit=None):
 	args=['git', 'tag', '-a', tag_name]
 	if tag_desc: args+=['-m', tag_desc]
 	if commit: args+=[commit]
-	sp.run(args)
+	sp_log=sp.run(args)
+	if sp_log.returncode!=0:
+		npc_m.print_categorical_bracket('new_uploading_tag:ERROR','Exit code isn\'t 0')
+		return
+	args=['git','push','--tag']
+	sp_log=sp.run(args)
+	if sp_log.returncode!=0:
+		npc_m.print_categorical_bracket('new_uploading_tag:ERROR','Exit code isn\'t 0')
+		return
 
 ## For specific works
 ### Create and upload Git tag
