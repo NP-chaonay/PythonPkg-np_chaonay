@@ -1,4 +1,5 @@
-# Name: NP-chaonay Python package
+#!/usr/bin/env python3
+# Name: Python package "np_chaonay"
 # Description: Objects collection Python package by NP-chaonay
 # Author: NP-chaonay (Nuttapong Punpipat)
 # Version: V.1.3.0_stable
