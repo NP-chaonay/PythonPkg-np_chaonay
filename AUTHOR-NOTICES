@@ -1,6 +1,6 @@
 # Changes Pushing
 - Revised Date must be always updated.
-- CHANGELOG should be updated on Github or local, ASAP.
+- CHANGELOG should be updated on Github or local.
 
 # Release Publishing
 1) Checking for changed files, changing the version of those.
