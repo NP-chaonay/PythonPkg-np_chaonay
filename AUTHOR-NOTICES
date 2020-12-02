@@ -4,6 +4,7 @@
 
 # Release Publishing
 1) Checking for changed files, changing the version of those.
+	- For parent file of those files, don't need to change 'revised date', if that main content's parent file is not changed.
 2) Checking and Changing the version in README, CHANGELOG, setup.py, np_chaonay/__init__.py, and others related.
 	- For general case, this command speeds up: "nano README.md np_chaonay/__init__.py setup.py CHANGELOG"
 3) Checking things, then create tags, and upload.
