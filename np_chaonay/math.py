@@ -7,7 +7,7 @@
 #       - Major version: indicates of very significant changes or changes that break compatibility on some system/platforms.
 #       - Minor version: indicates of significant changes or features adding.
 #       - Micro version: indicates of small changes or bug patches, or even typo revising.
-# Revised Date: 2020-09-05 11:45 (UTC)
+# Revised Date: 2020-12-02 10:52 (UTC)
 # License: MIT License
 # Programming Language: Python
 # CUI/GUI Language: English
@@ -66,7 +66,13 @@ class Vector():
 	# Object Representation
 	  >>> Vector(-1,0,1)
 	  Vector((-1,0,1)
-	  
+	
+	# Object Length
+	  >> len(Vector(1,2,3))
+	  3
+	  >> len(Vector())
+	  0
+	
 	# Object Iteration
 	  >>> list(Vector(-1,0,1)
 	  [-1,0,1]
@@ -157,3 +163,5 @@ class Vector():
 			return type(self)(*new_dimensions)
 	def magnitude(self):
 		return (sum(tuple(map(lambda x: x**2,self.dimensions))))**0.5
+	def __len__(self):
+		return len(self.dimensions)
