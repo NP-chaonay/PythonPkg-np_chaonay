@@ -1,11 +1,10 @@
 # Changes Pushing
 - Revised Date must be always updated.
-- Files: np_chaonay/, setup.py, README; are supposed to be updated with PyPi
 - CHANGELOG should be updated on Github or local, ASAP.
 
 # Release Publishing
 1) Checking for changed files, changing the version of those.
-2) Changing the version in README, CHANGELOG, setup.py, np_chaonay/__init__.py, and others related.
+2) Checking and Changing the version in README, CHANGELOG, setup.py, np_chaonay/__init__.py, and others related.
 	- For general case, this command speeds up: "nano README.md np_chaonay/__init__.py setup.py CHANGELOG"
 3) Checking things, then create tags, and upload.
 
