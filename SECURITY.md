@@ -8,8 +8,8 @@ This table below tell exactly what versions are security-supported.
 
 |Version|Supported|
 |-|-|
-|All releases|:white_check_mark:|
-|(MARKDOWN RESERVED)|:x:|
+|All releases that have been released in 1 year|:white_check_mark:|
+|All releases that older than 1 year|:x:|
 
 NOTES: Development versions are not security-supported.
 

@@ -1,13 +1,21 @@
-# Changes Pushing
+# Pulling and Pushing
+- Sync from/to remote as soon as possible on each circumstances:
+	- Before changing local-repo, after remote-repo have been changed from another local-repo
+		= Sync changes first
+	- After changing on local-repo
+		= Try to commit on remote as soon as possible; if not, do not make any change on another local-repo or remote-repo
+- if making changes, commit them on remote asap
+
+# Committing
 - Revised Date must be always updated.
-- CHANGELOG should be updated on Github or local.
 
 # Release Publishing
-1) Checking for changed files, changing the version of those.
+1) changing LICENSE file's year
+2) Checking for changed files, changing the version of those.
 	- For parent file of those files, don't need to change 'revised date', if that main content's parent file is not changed.
-2) Checking and Changing the version in README, CHANGELOG, setup.py, np_chaonay/__init__.py, and others related.
+3) Checking and Changing the version in README, CHANGELOG, setup.py, np_chaonay/__init__.py, and others related.
 	- For general case, this command speeds up: "nano README.md np_chaonay/__init__.py setup.py CHANGELOG"
-3) Checking things, then create tags, and upload.
+4) Checking things, then create tags, and upload.
 
 # GitHub Template
 	# Section1
