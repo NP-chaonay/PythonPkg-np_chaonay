@@ -1,21 +1,14 @@
 - Author: NP-chaonay (Nuttapong Punpipat)
 
 - Contributors:
-	- NP-chaonay (Nuttapong Punpipat)
+	- NP-chaonay@Github (Full name: Nuttapong Punpipat; E-mail: nuttapongpunpipat@gmail.com) (Main contributor)
 
-- Most of software contained in this Python package should use MIT License.
-  In case of "MIT License" is used, MAIN LICENSE BELOW IS APPLIED by default.
-  In case of other license is used, MUST BE STATED in this file.
-
-- This Python package and most of the rest, use the main "MIT License".
-
-- Main license used in this package is "MIT License"
+- Main license used in this software/Python-package/repository is "MIT License"
   For the main license's declaration, see below. :
-
                         ######## START OF LINE ########
 MIT License
 
-Copyright (c) 2020 Nuttapong Punpipat
+Copyright (c) 2021 Nuttapong Punpipat
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -35,3 +28,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
                         ######## END OF LINE ########
+
+[License Changing History]
+REMARK: the license change doesn't apply to prior commit from commit which the license is changed
+REMARK: noted using github-repository commit id
+REMARK: Doesn't include latest commit of the license file
+(6dd91916846e9e0205dd1fd67e112aee6ccbc748): Adding statement: author-and-contributors, additional-remarks; however this commit and previous one have same effects (because no any components using different license from the specified main one, and additional author information have no difference from the previous license file.)
+(808bb6a335956cad1d56ae204a5029f5c898b847): Entire repo is licensed by MIT license (initial commit)
