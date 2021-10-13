@@ -1,7 +1,9 @@
-- Author: NP-chaonay (Nuttapong Punpipat)
+- Creators/Founders: NP-chaonay@Github (Full name: Nuttapong Punpipat; E-mail: nuttapongpunpipat@gmail.com)
+- Copyright Holders: NP-chaonay@Github (Full name: Nuttapong Punpipat; E-mail: nuttapongpunpipat@gmail.com)
+- Authors: NP-chaonay@Github (Full name: Nuttapong Punpipat; E-mail: nuttapongpunpipat@gmail.com)
 
 - Contributors:
-	- NP-chaonay@Github (Full name: Nuttapong Punpipat; E-mail: nuttapongpunpipat@gmail.com) (Main contributor)
+	+ < All authors >
 
 - Main license used in this software/Python-package/repository is "MIT License"
   For the main license's declaration, see below. :
@@ -33,5 +35,7 @@ SOFTWARE.
 REMARK: the license change doesn't apply to prior commit from commit which the license is changed
 REMARK: noted using github-repository commit id
 REMARK: Doesn't include latest commit of the license file
+(<Current>): Improved credit informations and misc editing of "License Changing History"
+(51cb35b254f9ea1442ee4d93aee904f8ab77249c): Additional improvement, many statements changed but maybe no significant effects on the repository.
 (6dd91916846e9e0205dd1fd67e112aee6ccbc748): Adding statement: author-and-contributors, additional-remarks; however this commit and previous one have same effects (because no any components using different license from the specified main one, and additional author information have no difference from the previous license file.)
 (808bb6a335956cad1d56ae204a5029f5c898b847): Entire repo is licensed by MIT license (initial commit)
